@@ -4,7 +4,7 @@ import openpyxl
 import os
 
 # Initialize MCP app
-mcp = FastMCP("c")
+mcp = FastMCP("Insurance Data Analysis")
 
 # === CONFIGURATION ===
 EXCEL_PATH = r"Insurance.xlsx"
@@ -86,4 +86,5 @@ def get_sheet_preview(sheet_name: str, table_limit: int = 2, row_preview: int = 
 # === Run MCP ===
 if __name__ == "__main__":
     mcp.run()
+
 
