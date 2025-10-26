@@ -7,7 +7,7 @@ import os
 mcp = FastMCP("c")
 
 # === CONFIGURATION ===
-EXCEL_PATH = r"C:\Users\User\Downloads\Insurance.xlsx"
+EXCEL_PATH = r"Insurance.xlsx"
 
 if not os.path.exists(EXCEL_PATH):
     raise FileNotFoundError(f"Excel file not found: {EXCEL_PATH}")
@@ -86,3 +86,4 @@ def get_sheet_preview(sheet_name: str, table_limit: int = 2, row_preview: int = 
 # === Run MCP ===
 if __name__ == "__main__":
     mcp.run()
+
